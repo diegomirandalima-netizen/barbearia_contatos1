@@ -1,82 +1,92 @@
-body{
-    background: #CCCCCC;
+body {
+    background: #CCCCCC;                /* Define a cor de fundo da página como cinza claro */
 }
-#banner{
-    width: 100%;
+
+#banner {
+    width: 100%;                        /* Faz o elemento com ID "banner" ocupar toda a largura da tela */
 }
-.titulo-principal{
-    text-align: center;
-    font-size: 2em;
-    margin: 0 0 1em;
-    clear: left;
+
+.titulo-principal {
+    text-align: center;                 /* Centraliza o texto do título */
+    font-size: 2em;                     /* Define o tamanho da fonte como o dobro do tamanho padrão */
+    margin: 0 0 1em;                    /* Cria uma margem apenas na parte inferior do título */
+    clear: left;                        /* Impede que o título fique ao lado de elementos flutuados à esquerda */
 }
+
 .utensilios {
-    width: 120px;
-    float: left;
-    margin: 0 20px 20px 0;
+    width: 120px;                       /* Define a largura fixa da imagem/elemento em 120 pixels */
+    float: left;                        /* Faz o elemento flutuar à esquerda, permitindo que textos contornem ele */
+    margin: 0 20px 20px 0;              /* Adiciona espaçamento externo na direita e abaixo do elemento */
 }
+
 header {
-	background: #BBBBBB;
-	padding: 20px 0;
+    background: #BBBBBB;                /* Define o fundo do cabeçalho com um tom de cinza médio */
+    padding: 20px 0;                    /* Adiciona 20px de espaçamento interno acima e abaixo do cabeçalho */
 }
 
 .caixa {
-	position: relative;
-	width: 940px;
-	margin: 0 auto;
+    position: relative;                 /* Define este elemento como a referência de posicionamento para seus filhos */
+    width: 940px;                       /* Define uma largura fixa máxima de 940 pixels para o conteúdo */
+    margin: 0 auto;                     /* Centraliza este bloco horizontalmente na tela */
 }
 
 nav {
-	position: absolute;
-	top: 110px;
-	right: 0;
+    position: absolute;                 /* Posiciona o menu de forma livre e exata dentro do elemento .caixa */
+    top: 110px;                         /* Empurra o menu 110 pixels para baixo a partir do topo da .caixa */
+    right: 0;                           /* Alinha o menu colado na extremidade direita da .caixa */
 }
 
 nav li {
-	display: inline;
-	margin: 0 0 0 15px;
+    display: inline;                    /* Faz os itens da lista ficarem lado a lado (em linha) em vez de empilhados */
+    margin: 0 0 0 15px;                 /* Cria um espaçamento de 15 pixels apenas no lado esquerdo de cada item */
 }
 
 nav a {
-	text-transform: uppercase;
-	color: #000000;
-	font-weight: bold;
-	font-size: 22px;
-	text-decoration: none;
+    text-transform: uppercase;          /* Transforma todos os textos dos links em letras maiúsculas */
+    color: #000000;                     /* Define a cor do texto do link como preto */
+    font-weight: bold;                  /* Deixa a fonte em negrito */
+    font-size: 22px;                    /* Define o tamanho da fonte do link para 22 pixels */
+    text-decoration: none;              /* Remove o sublinhado padrão que os links possuem */
 }
 
 nav a:hover {
-	color: #C78C19;
-	text-decoration: underline;
+    color: #C78C19;                     /* Muda a cor do link para dourado quando o mouse passa por cima */
+    text-decoration: underline;         /* Adiciona um sublinhado no link quando o mouse passa por cima */
 }
-.lista-beneficios{
-    display: inline-block;
-    vertical-align: top;
-    width: 20%;
-    margin-right: 15%;
+
+.lista-beneficios {
+    display: inline-block;              /* Permite definir tamanho ao bloco, mas mantendo-o lado a lado com outros */
+    vertical-align: top;                /* Alinha este bloco pelo topo em relação aos elementos vizinhos */
+    width: 20%;                         /* Define que a lista ocupará 20% da largura total da tela */
+    margin-right: 15%;                  /* Cria um espaço de reserva de 15% na lateral direita do bloco */
 }
-.principal{
-    background: #CCCCCC;
-    padding: 30px;
+
+.principal {
+    background: #CCCCCC;                /* Define o fundo da seção principal como cinza claro */
+    padding: 30px;                      /* Adiciona 30 pixels de espaçamento interno em todos os lados */
 }
-.beneficios{
-    background: #FFFFFF;
-    padding: 20px;
+
+.beneficios {
+    background: #FFFFFF;                /* Define o fundo da seção de benefícios como branco */
+    padding: 20px;                      /* Adiciona 20 pixels de espaçamento interno em todos os lados */
 }
-.itens{
-    font-style: italic;
+
+.itens {
+    font-style: italic;                 /* Deixa o texto desta classe em estilo itálico (inclinado) */
 }
+
 footer {
-	text-align: center;
-	background: url("bg.jpg");
-	padding: 40px 0;
+    text-align: center;                 /* Centraliza todos os textos e elementos dentro do rodapé */
+    background: url("bg.jpg");          /* Define uma imagem chamada "bg.jpg" como fundo do rodapé */
+    padding: 40px 0;                    /* Adiciona 40 pixels de espaçamento interno acima e abaixo no rodapé */
 }
 
 .copyright {
-	color: #FFFFFF;
-	font-size: 13px;
-	margin: 20px 0 0;
+    color: #FFFFFF;                     /* Define a cor do texto de direitos autorais como branco */
+    font-size: 13px;                    /* Define o tamanho da fonte para 13 pixels */
+    margin: 20px 0 0;                   /* Adiciona 20 pixels de margem externa apenas na parte superior */
 }
+
 .imagembeneficios {
-    width: 60%;
+    width: 60%;                         /* Faz a imagem de benefícios ocupar 60% da largura do espaço disponível */
 }

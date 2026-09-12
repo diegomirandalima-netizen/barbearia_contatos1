@@ -1,40 +1,65 @@
+<!-- Informa ao navegador que o documento utiliza a versão mais recente do HTML (HTML5) -->
 <!DOCTYPE html>
+<!-- Tag principal que envolve todo o conteúdo da página web -->
 <html>
+	<!-- Seção de metadados: contém informações técnicas invisíveis para o usuário, mas essenciais para o navegador -->
 	<head>
+		<!-- Define a codificação de caracteres como UTF-8, garantindo a exibição correta de acentos e cedilha -->
 		<meta charset="UTF-8">
+		<!-- Define o título da página que aparece na aba do navegador -->
 		<title>Produtos - Barbearia Alura</title>
 
+		<!-- Vincula o arquivo CSS de reset para zerar as margens padrões de fábrica dos navegadores -->
 		<link rel="stylesheet" href="reset.css">
+		<!-- Vincula o arquivo CSS personalizado que aplica as cores, fontes e o layout da página -->
 		<link rel="stylesheet" href="style.css">
 	</head>
+	<!-- Corpo da página: abriga todo o conteúdo visual que será exibido para os visitantes -->
 	<body>
+		<!-- Define o cabeçalho fixo no topo da página -->
 		<header>
+            <!-- Divisão interna para limitar e centralizar a largura máxima do conteúdo do cabeçalho -->
             <div class="caixa">
+                <!-- Título principal da página, que neste caso envolve a imagem do logotipo da barbearia -->
                 <h1><img src="logo.png"></h1>
+                <!-- Seção que identifica o menu de navegação do site -->
                 <nav>
+                    <!-- Lista não ordenada que organiza os links de navegação -->
                     <ul>
+                        <!-- Item da lista contendo o link direcionado para a página inicial (Home) -->
                         <li><a href="index.html">Home</a></li>
+                        <!-- Item da lista contendo o link para a página atual de exibição dos serviços (Produtos) -->
                         <li><a href="produtos.html">Produtos</a></li>
+                        <!-- Item da lista contendo o link direcionado para o formulário de atendimento (Contato) -->
                         <li><a href="contato.html">Contato</a></li>
                     </ul>
                 </nav>
             </div>
         </header>
 
+		<!-- Define a área de conteúdo principal e exclusivo desta página específica -->
 		<main>
+			<!-- Lista de produtos que agrupa os cartões de serviços oferecidos -->
 			<ul class="produtos">
+				<!-- Primeiro cartão de produto: exibe informações do serviço de corte de cabelo -->
 				<li>
+					<!-- Título de segundo nível identificando o nome do serviço profissional -->
 					<h2>Cabelo</h2>
+					<!-- Imagem ilustrativa correspondente ao serviço de cabelo -->
 					<img src="cabelo.jpg">
+					<!-- Parágrafo explicativo detalhando como o serviço é realizado -->
 					<p class="produto-descricao">Na tesoura ou máquina, como o cliente preferir</p>
+					<!-- Parágrafo de destaque informando o valor cobrado pelo corte -->
 					<p class="produto-preco">R$ 25,00</p>
 				</li>
+				<!-- Segundo cartão de produto: exibe informações do serviço de cuidados com a barba -->
 				<li>
 					<h2>Barba</h2>
 					<img src="barba.jpg">
 					<p class="produto-descricao">Corte e desenho profissional de barba</p>
 					<p class="produto-preco">R$ 18,00</p>
 				</li>
+				<!-- Terceiro cartão de produto: exibe o combo promocional juntando os dois serviços anteriores -->
 				<li>
 					<h2>Cabelo + Barba</h2>
 					<img src="cabelo+barba.jpg">
@@ -44,8 +69,11 @@
 			</ul>
 		</main>
 
+		<!-- Define o rodapé da página com informações institucionais de encerramento -->
 		<footer>
+			<!-- Versão em tons claros do logotipo da barbearia para contrastar com o fundo escuro -->
 			<img src="logo-branco.png">
+			<!-- Texto legal indicando os direitos autorais usando o código especial "&copy;" para gerar o símbolo © -->
 			<p class="copyright">&copy; Copyright Barbearia Alura - 2019</p>
 		</footer>
 	</body>

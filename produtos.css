@@ -1,151 +1,157 @@
 header {
-	background: #BBBBBB;
-	padding: 20px 0;
+	background: #BBBBBB;                     /* Define o fundo do cabeçalho com um tom de cinza médio */
+	padding: 20px 0;                         /* Cria um espaçamento interno de 20px acima/abaixo e 0 nas laterais */
 }
 
 .caixa {
-	position: relative;
-	width: 940px;
-	margin: 0 auto;
+	position: relative;                      /* Torna o bloco uma referência para o posicionamento do menu (nav) */
+	width: 940px;                            /* Fixa a largura máxima do miolo do cabeçalho em 940 pixels */
+	margin: 0 auto;                          /* Centraliza o bloco horizontalmente na tela */
 }
 
 nav {
-	position: absolute;
-	top: 110px;
-	right: 0;
+	position: absolute;                      /* Desprende o menu do fluxo comum e permite posicioná-lo livremente */
+	top: 110px;                              /* Alinha o topo do menu a 110px de distância do topo da .caixa */
+	right: 0;                                /* Cola o menu completamente no canto direito da .caixa */
 }
 
 nav li {
-	display: inline;
-	margin: 0 0 0 15px;
+	display: inline;                         /* Modifica os itens da lista para que fiquem um ao lado do outro */
+	margin: 0 0 0 15px;                      /* Adiciona uma margem de 15px apenas no lado esquerdo de cada item */
 }
 
 nav a {
-	text-transform: uppercase;
-	color: #000000;
-	font-weight: bold;
-	font-size: 22px;
-	text-decoration: none;
+	text-transform: uppercase;               /* Força todas as letras do texto do link a ficarem maiúsculas */
+	color: #000000;                          /* Define a cor do texto do link como preto */
+	font-weight: bold;                       /* Aplica o estilo negrito à fonte do link */
+	font-size: 22px;                         /* Ajusta o tamanho do texto para 22 pixels */
+	text-decoration: none;                   /* Remove o sublinhado padrão que vem nos links do navegador */
 }
 
 nav a:hover {
-	color: #C78C19;
-	text-decoration: underline;
+	color: #C78C19;                          /* Altera a cor do texto para dourado quando o mouse passa por cima */
+	text-decoration: underline;              /* Adiciona o sublinhado de volta quando o usuário passa o mouse */
 }
 
 .produtos {
-	width: 940px;
-	margin: 0 auto;
-	padding: 50px 0;
+	width: 940px;                            /* Define a largura da área dos produtos em 940 pixels */
+	margin: 0 auto;                          /* Centraliza o bloco de produtos na tela horizontalmente */
+	padding: 50px 0;                         /* Adiciona um espaçamento interno de 50px acima e abaixo da seção */
 }
 
 .produtos li {
-	display: inline-block;
-	text-align: center;
-	width: 30%;
-	vertical-align: top;
-	margin: 0 1.5%;
-	padding: 30px 20px;
-	box-sizing: border-box;
-	border: 2px solid #000000;
-	border-radius: 10px;
+	display: inline-block;                   /* Permite alinhar os cartões lado a lado e ainda definir tamanhos para eles */
+	text-align: center;                      /* Centraliza todos os textos e imagens dentro do cartão do produto */
+	width: 30%;                              /* Faz cada cartão ocupar quase um terço (30%) da largura total */
+	vertical-align: top;                     /* Alinha o topo de todos os cartões, caso algum tenha texto maior */
+	margin: 0 1.5%;                          /* Adiciona 1.5% de margem nas laterais, preenchendo o espaço restante */
+	padding: 30px 20px;                      /* Define espaçamento interno de 30px vertical e 20px horizontal no cartão */
+	box-sizing: border-box;                  /* Faz o padding e a borda ficarem inclusos dentro dos 30% da largura */
+	border: 2px solid #000000;               /* Desenha uma borda preta sólida de 2px ao redor do cartão */
+	border-radius: 10px;                     /* Arredonda os quatro cantos do cartão do produto em 10 pixels */
 }
 
 .produtos li:hover {
-	border-color: #C78C19;
+	border-color: #C78C19;                   /* Altera a cor da borda do cartão para dourado ao passar o mouse */
 }
 
 .produtos li:active {
-	border-color: #088C19;	
+	border-color: #088C19;	                 /* Altera a cor da borda para verde no momento exato do clique */
 }
 
 .produtos li:hover h2 {
-	font-size: 34px;
+	font-size: 34px;                         /* Aumenta o título do produto para 34px quando o mouse entra no cartão */
 }
 
 .produtos h2 {
-	font-size: 30px;
-	font-weight: bold;
+	font-size: 30px;                         /* Define o tamanho padrão do título do produto em 30 pixels */
+	font-weight: bold;                       /* Deixa o título do produto em negrito */
 }
 
 .produto-descricao {
-	font-size: 18px;
+	font-size: 18px;                         /* Ajusta o tamanho da fonte da descrição para 18 pixels */
 }
 
 .produto-preco {
-	font-size: 22px;
-	font-weight: bold;
-	margin-top: 10px;
+	font-size: 22px;                         /* Ajusta o tamanho da fonte do preço para 22 pixels */
+	font-weight: bold;                       /* Aplica negrito para dar destaque ao preço do produto */
+	margin-top: 10px;                        /* Cria um espaçamento de 10px acima do preço para afastá-lo do texto */
 }
 
 footer {
-	text-align: center;
-	background: url("bg.jpg");
-	padding: 40px 0;
+	text-align: center;                      /* Centraliza o texto de copyright e outros elementos do rodapé */
+	background: url("bg.jpg");               /* Define o arquivo "bg.jpg" como a imagem de fundo do rodapé */
+	padding: 40px 0;                         /* Cria um espaçamento interno de 40px no topo e na base do rodapé */
 }
 
 .copyright {
-	color: #FFFFFF;
-	font-size: 13px;
-	margin: 20px 0 0;
+	color: #FFFFFF;                          /* Altera a cor do texto do copyright para branco */
+	font-size: 13px;                         /* Define o tamanho da fonte do rodapé em 13 pixels */
+	margin: 20px 0 0;                        /* Aplica um espaçamento externo de 20px apenas na parte de cima */
 }
+
 #contatos {
-    width: 940px;
-    margin: 0 auto;
+    width: 940px;                            /* Define a largura da seção de contato para 940 pixels */
+    margin: 0 auto;                          /* Centraliza a seção de contatos na tela horizontalmente */
 }
 
 form {
-    margin: 40px 0;
+    margin: 40px 0;                          /* Adiciona uma margem de 40px acima e abaixo de todo o formulário */
 }
 
 form label {
-    display:block;
-    font-size: 20px;
-    margin: 0 0 10px;
+    display: block;                          /* Faz o rótulo ocupar a linha toda, jogando o campo de texto para baixo */
+    font-size: 20px;                         /* Define o tamanho da fonte do rótulo para 20 pixels */
+    margin: 0 0 10px;                        /* Adiciona uma margem inferior de 10px para afastar do campo */
 }
+
 form input {
-    display: block;
-    margin: 0 0 20px;
-    padding: 10px 25px;
-    width: 50%;
+    display: block;                          /* Força o campo de texto a se comportar como bloco na linha */
+    margin: 0 0 20px;                        /* Adiciona uma margem inferior de 20px para separar os campos */
+    padding: 10px 25px;                      /* Aplica preenchimento interno de 10px vertical e 25px horizontal */
+    width: 50%;                              /* Faz o campo ocupar metade (50%) da largura total disponível */
 }
+
 .input-padrao {
-    display: block;
-    margin: 0 0 20px;
-   padding: 10px 25px;
-    width: 50%;
+    display: block;                          /* Transforma a classe em bloco ocupando toda a largura da sua linha */
+    margin: 0 0 20px;                        /* Cria um espaço de 20px abaixo deste campo de entrada */
+    padding: 10px 25px;                      /* Define espaçamento interno de 10px (cima/baixo) e 25px (lados) */
+    width: 50%;                              /* Configura a largura do elemento para metade do bloco pai */
 }
+
 .checkbox {
-    margin: 20px 0;
+    margin: 20px 0;                          /* Define uma margem de 20px acima e abaixo da caixa de seleção */
 }
+
 .enviar {
-    width:40%;
-    padding: 15px 0;
-    background: orange;
-    color: white;
-    font-weight: bold;
-    font-size: 18px;
-    border: none;
-    border-radius: 5px;
-    transition: 1s all;
-    cursor: pointer;
+    width: 40%;                              /* Define a largura do botão de envio em 40% do formulário */
+    padding: 15px 0;                         /* Aplica 15px de espaçamento interno acima e abaixo do texto do botão */
+    background: orange;                      /* Pinta o fundo do botão de laranja */
+    color: white;                            /* Define a cor do texto do botão como branco */
+    font-weight: bold;                       /* Coloca a letra do botão em negrito */
+    font-size: 18px;                         /* Ajusta o tamanho da fonte do botão para 18 pixels */
+    border: none;                            /* Remove as bordas cinzas padrões que o navegador coloca em botões */
+    border-radius: 5px;                      /* Aplica cantos levemente arredondados de 5px no botão */
+    transition: 1s all;                      /* Faz qualquer efeito visual (cor, tamanho) demorar 1 segundo para transicionar */
+    cursor: pointer;                         /* Transforma a seta do mouse na "mãozinha" de clique ao passar no botão */
 }
+
 .enviar:hover {
-    background: darkorange;
-    transform: scale(1.2);
+    background: darkorange;                  /* Muda a cor do fundo para um laranja escuro ao passar o mouse */
+    transform: scale(1.2);                   /* Aumenta o tamanho do botão em 20% (efeito de zoom suave pelo transition) */
 }
 
 table {
-    margin: 20px 0 40px;
+    margin: 20px 0 40px;                     /* Aplica margens na tabela: 20px acima, 0 nas laterais e 40px abaixo */
 }
 
 thead {
-    background: #555555;
-    color: white;
-    font-weight: bold;
+    background: #555555;                     /* Pinta o fundo do cabeçalho da tabela com um cinza escuro */
+    color: white;                            /* Altera a cor das letras do cabeçalho da tabela para branco */
+    font-weight: bold;                       /* Deixa as palavras de identificação da tabela em negrito */
 }
 
 td, th {
-    border: 1px solid #000000;
-    padding: 8px 15px;
+    border: 1px solid #000000;               /* Adiciona uma linha preta fina de 1px separando cada célula e coluna */
+    padding: 8px 15px;                       /* Dá um respiro interno de 8px vertical e 15px horizontal em cada célula */
 }

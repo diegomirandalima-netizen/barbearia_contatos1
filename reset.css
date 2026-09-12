@@ -3,6 +3,7 @@
    License: none (public domain)
 */
 
+/* Esta longa lista seleciona praticamente todas as tags HTML existentes */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -16,33 +17,39 @@ article, aside, canvas, details, embed,
 figure, figcaption, footer, header, hgroup, 
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+	margin: 0;                          /* Remove as margens externas padrão de todas as tags */
+	padding: 0;                         /* Remove os espaçamentos internos padrão de todas as tags */
+	border: 0;                          /* Remove bordas que alguns elementos (como imagens e fieldsets) trazem de fábrica */
+	font-size: 100%;                    /* Garante que o texto comece com o tamanho base definido pelo navegador ou usuário */
+	font: inherit;                      /* Faz os elementos herdarem a mesma tipografia e estilo do elemento pai */
+	vertical-align: baseline;           /* Alinha a base dos elementos na mesma linha invisível do texto */
 }
-/* HTML5 display-role reset for older browsers */
+
+/* Correção para navegadores antigos que não reconheciam as tags estruturais do HTML5 */
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
-	display: block;
+	display: block;                     /* Força essas tags a se comportarem como blocos (ocupando a linha toda) */
 }
+
 body {
-	line-height: 1;
+	line-height: 1;                     /* Define o espaçamento entre as linhas do texto em exatamente 1x o tamanho da fonte */
 }
+
 ol, ul {
-	list-style: none;
+	list-style: none;                   /* Remove as bolinhas das listas desordenadas (ul) e os números das listas ordenadas (ol) */
 }
+
 blockquote, q {
-	quotes: none;
+	quotes: none;                       /* Remove as aspas automáticas que os navegadores colocam em citações */
 }
+
 blockquote:before, blockquote:after,
 q:before, q:after {
-	content: '';
-	content: none;
+	content: '';                        /* Garante que nenhum caractere seja gerado antes ou depois das citações */
+	content: none;                      /* Remove o comportamento de conteúdo gerado automaticamente */
 }
+
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+	border-collapse: collapse;          /* Junta as bordas das células da tabela para que não fiquem com espaço duplo */
+	border-spacing: 0;                  /* Zera qualquer distância/espaçamento que exista entre as células da tabela */
 }
