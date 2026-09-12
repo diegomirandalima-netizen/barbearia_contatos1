@@ -1,16 +1,10 @@
-<!-- Declara ao navegador que o documento usa a especificação moderna do HTML5 -->
 <!DOCTYPE html>
-<!-- Tag raiz do documento que engloba todo o conteúdo estrutural do site -->
 <html>
     <!-- Bloco de metadados com configurações técnicas invisíveis ao visitante -->
     <head>
-        <!-- Define a codificação universal de caracteres para evitar erros em acentos e cedilhas -->
         <meta charset="UTF-8">
-        <!-- Define o texto que dá nome à página na aba do navegador -->
         <title>Contato - Barbearia Alura</title>
-        <!-- Carrega a folha de estilos geral responsável pelo layout básico do site -->
         <link rel="stylesheet" href="style.css">
-        <!-- Carrega a folha de estilos complementar com regras visuais específicas -->
         <link rel="stylesheet" href="produtos.css">
     </head>
     <!-- Corpo da página onde fica toda a interface visual exibida ao usuário -->
@@ -19,16 +13,20 @@
         <header>
             <!-- Bloco divisor utilizado no CSS para delimitar a largura máxima centralizada -->
             <div class="caixa">
+
                 <!-- Título máximo que envolve o logotipo principal com descrição acessível para leitores de tela -->
                 <h1><img src="logo.png" alt = "logo do site da barbearia Alura"></h1>
+
                 <!-- Bloco que encapsula o menu de links para navegação entre páginas -->
                 <nav>
                     <!-- Lista desordenada responsável por estruturar os tópicos do menu -->
                     <ul>
                         <!-- Item da lista que direciona o usuário para a página inicial (Home) -->
                         <li><a href="index.html">Home</a></li>
+
                         <!-- Item da lista que aponta para o catálogo de serviços (Produtos) -->
                         <li><a href="produtos.html">Produtos</a></li>
+
                         <!-- Item da lista que mantém o usuário na página atual de atendimento (Contato) -->
                         <li><a href="contato.html">Contato</a></li>
                     </ul>
@@ -37,34 +35,42 @@
         </header>
         <!-- Conteúdo principal exclusivo focado no formulário, identificado pelo ID "contatos" -->
         <main id = "contatos">
+
             <!-- Cria o container de formulário para capturar e processar dados do cliente -->
             <form>
                 <!-- Rótulo do campo de nome, vinculado ao input abaixo através do atributo 'for' -->
                 <label for="nomesobrenome">Nome e sobrenome</label>
+
                 <!-- Caixa de entrada de texto simples estilizada pela classe padrão -->
                 <input class="input-padrao" type="text" id="nomesobrenome">
                 
                 <!-- Rótulo explicativo vinculado ao campo de correio eletrônico -->
                 <label for="email">Email</label>
+
                 <!-- Campo obrigatório com texto fictício de exemplo sumular em cinza ao fundo -->
                 <input class="input-padrao" type="text" id="email" required placeholder = "seuemail@dominio.com">
                 
                 <!-- Rótulo explicativo vinculado ao campo de contato telefônico -->
                 <label for="telefone">Telefone</label>
+
                 <!-- Campo obrigatório que exibe uma máscara de preenchimento sugerida no placeholder -->
                 <input class="input-padrao" type="text" id="telefone" required placeholder="(XX)XXXXX-XXXX">
                 
                 <!-- Rótulo explicativo vinculado ao bloco de digitação livre -->
                 <label for="mensagem">Mensagem</label>
+
                 <!-- Área expandida para mensagens longas pré-dimensionada em 70 colunas por 10 linhas -->
                 <textarea cols="70" rows="10" id="mensagem" class="input-padrao"></textarea>
                 
                 <!-- Agrupador de campos correlatos que cria uma borda sutil ao redor das opções de resposta -->
                 <fieldset>
+
                     <!-- Título que dá contexto ao conjunto de opções contido no fieldset -->
                     <legend>Como prefere o nosso contato?</legend>
+
                     <!-- Rótulo que envolve o botão, permitindo marcar a opção clicando sobre a palavra -->
                     <label for="radio-email">
+
                     <!-- Botão circular de escolha única. O 'name' idêntico impede que mais de um seja ativado junto -->
                     <input type="radio" name="contato" value="email" id="radio-email">
                     Email</label>
@@ -82,24 +88,32 @@
                 
                 <!-- Segundo agrupador focado na triagem de horários para a agenda de atendimento -->
                 <fieldset>
+
                     <!-- Título do segundo conjunto de escolhas integrado à moldura do bloco -->
                     <legend>Qual horário prefere ser atendido?</legend>
+
                     <!-- Cria uma caixa de seleção suspensa do tipo menu dropdown -->
                     <select>
+
                         <!-- Item selecionável interno que representa o período matutino -->
                         <option>Manhã</option>
+
                         <!-- Item selecionável interno que representa o período vespertino -->
                         <option>Tarde</option>
+
                         <!-- Item selecionável interno que representa o período noturno -->
                         <option>Noite</option>
                     </select>
+
                     <!-- Rótulo estilizado que envelopa a caixa de autorização de marketing -->
                     <label class="checkbox">
+
                     <!-- Caixa quadrada de seleção múltipla predefinida como ativa pelo navegador -->
                     <input type="checkbox" checked>
                     Gostaria de receber nossas novidades por email?
                     </label>
                 </fieldset>
+
                 <!-- Botão especial do tipo submit encarregado de despachar as respostas preenchidas -->
                 <input  class = "enviar" type="submit" value="Enviar formulário">
             </form>
@@ -112,6 +126,7 @@
                     <tr>
                         <!-- Célula de destaque que intitula a primeira coluna (Dia) -->
                         <th>Dia</th>
+
                         <!-- Célula de destaque que intitula a segunda coluna (Horário) -->
                         <th>Horário</th>
                     </tr>
@@ -122,6 +137,7 @@
                     <tr>
                         <!-- Célula com o valor textual do dia útil da semana -->
                         <td>Segunda</td>
+
                         <!-- Célula correpondente com a faixa horária de funcionamento -->
                         <td>8h ~ 20h</td>
                     </tr>
@@ -140,8 +156,10 @@
         </main>
         <!-- Rodapé estrutural posicionado no encerramento inferior da interface -->
         <footer>
+
             <!-- Imagem alternativa do logotipo adaptada com tons claros para contrastar no fundo escuro -->
             <img src="logo-branco.png" alt = "logo do site da barbearia Alura">
+            
             <!-- Parágrafo legal que imprime o ano vigente e converte a entidade especial no símbolo de direito autoral © -->
             <p class="copyright">&copy; Copyright Barbearia Alura - 2019</p>
         </footer>
