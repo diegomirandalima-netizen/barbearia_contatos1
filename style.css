@@ -13,8 +13,8 @@ body {
     clear: left;                        /* Impede que o titulo fique ao lado de elementos flutuados a esquerda */
 }
 
-.nvfoto {
-    width: 120px;                       /* Define a largura fixa da imagem/elemento em 120 pixels */
+.utensilios {
+    width: 60px;                       /* Define a largura fixa da imagem/elemento em 120 pixels */
     float: left;                        /* Faz o elemento flutuar a esquerda, permitindo que textos contornem ele */
     margin: 0 20px 20px 0;              /* Adiciona espacamento externo na direita e abaixo do elemento */
 }
@@ -25,7 +25,7 @@ header {
 }
 
 .caixa {
-    position: relative;                 /* Define este elemento como a referencia de posicionamento para seus filhos */
+    position: relative;                 /* Define este elemento como a referência de posicionamento para seus filhos */
     width: 940px;                       /* Define uma largura fixa maxima de 940 pixels para o conteúdo */
     margin: 0 auto;                     /* Centraliza este bloco horizontalmente na tela */
 }
