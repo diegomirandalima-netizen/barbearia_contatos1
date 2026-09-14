@@ -1,5 +1,5 @@
 body {
-    background: #CCCCCC;                /* Define a cor de fundo da página como cinza claro */
+    background: #CCCCCC;                /* Define a cor de fundo da pagina como cinza claro */
 }
 
 #banner {
@@ -7,26 +7,26 @@ body {
 }
 
 .titulo-principal {
-    text-align: center;                 /* Centraliza o texto do título */
-    font-size: 2em;                     /* Define o tamanho da fonte como o dobro do tamanho padrão */
-    margin: 0 0 1em;                    /* Cria uma margem apenas na parte inferior do título */
-    clear: left;                        /* Impede que o título fique ao lado de elementos flutuados à esquerda */
+    text-align: center;                 /* Centraliza o texto do titulo */
+    font-size: 2em;                     /* Define o tamanho da fonte como o dobro do tamanho padrao */
+    margin: 0 0 1em;                    /* Cria uma margem apenas na parte inferior do titulo */
+    clear: left;                        /* Impede que o titulo fique ao lado de elementos flutuados a esquerda */
 }
 
 .utensilios {
     width: 120px;                       /* Define a largura fixa da imagem/elemento em 120 pixels */
-    float: left;                        /* Faz o elemento flutuar à esquerda, permitindo que textos contornem ele */
-    margin: 0 20px 20px 0;              /* Adiciona espaçamento externo na direita e abaixo do elemento */
+    float: left;                        /* Faz o elemento flutuar a esquerda, permitindo que textos contornem ele */
+    margin: 0 20px 20px 0;              /* Adiciona espacamento externo na direita e abaixo do elemento */
 }
 
 header {
-    background: #BBBBBB;                /* Define o fundo do cabeçalho com um tom de cinza médio */
-    padding: 20px 0;                    /* Adiciona 20px de espaçamento interno acima e abaixo do cabeçalho */
+    background: #BBBBBB;                /* Define o fundo do cabecalho com um tom de cinza medio */
+    padding: 20px 0;                    /* Adiciona 20px de espacamento interno acima e abaixo do cabecalho */
 }
 
 .caixa {
-    position: relative;                 /* Define este elemento como a referência de posicionamento para seus filhos */
-    width: 940px;                       /* Define uma largura fixa máxima de 940 pixels para o conteúdo */
+    position: relative;                 /* Define este elemento como a referencia de posicionamento para seus filhos */
+    width: 940px;                       /* Define uma largura fixa maxima de 940 pixels para o conteudo */
     margin: 0 auto;                     /* Centraliza este bloco horizontalmente na tela */
 }
 
@@ -38,15 +38,15 @@ nav {
 
 nav li {
     display: inline;                    /* Faz os itens da lista ficarem lado a lado (em linha) em vez de empilhados */
-    margin: 0 0 0 15px;                 /* Cria um espaçamento de 15 pixels apenas no lado esquerdo de cada item */
+    margin: 0 0 0 15px;                 /* Cria um espacamento de 15 pixels apenas no lado esquerdo de cada item */
 }
 
 nav a {
-    text-transform: uppercase;          /* Transforma todos os textos dos links em letras maiúsculas */
+    text-transform: uppercase;          /* Transforma todos os textos dos links em letras maiusculas */
     color: #000000;                     /* Define a cor do texto do link como preto */
     font-weight: bold;                  /* Deixa a fonte em negrito */
     font-size: 22px;                    /* Define o tamanho da fonte do link para 22 pixels */
-    text-decoration: none;              /* Remove o sublinhado padrão que os links possuem */
+    text-decoration: none;              /* Remove o sublinhado padrao que os links possuem */
 }
 
 nav a:hover {
@@ -56,29 +56,29 @@ nav a:hover {
 
 .lista-beneficios {
     display: inline-block;              /* Permite definir tamanho ao bloco, mas mantendo-o lado a lado com outros */
-    vertical-align: top;                /* Alinha este bloco pelo topo em relação aos elementos vizinhos */
-    width: 20%;                         /* Define que a lista ocupará 20% da largura total da tela */
-    margin-right: 15%;                  /* Cria um espaço de reserva de 15% na lateral direita do bloco */
+    vertical-align: top;                /* Alinha este bloco pelo topo em relacao aos elementos vizinhos */
+    width: 20%;                         /* Define que a lista ocupara 20% da largura total da tela */
+    margin-right: 15%;                  /* Cria um espaco de reserva de 15% na lateral direita do bloco */
 }
 
 .principal {
-    background: #CCCCCC;                /* Define o fundo da seção principal como cinza claro */
-    padding: 30px;                      /* Adiciona 30 pixels de espaçamento interno em todos os lados */
+    background: #CCCCCC;                /* Define o fundo da secao principal como cinza claro */
+    padding: 30px;                      /* Adiciona 30 pixels de espacamento interno em todos os lados */
 }
 
 .beneficios {
-    background: #FFFFFF;                /* Define o fundo da seção de benefícios como branco */
-    padding: 20px;                      /* Adiciona 20 pixels de espaçamento interno em todos os lados */
+    background: #FFFFFF;                /* Define o fundo da secao de beneficios como branco */
+    padding: 20px;                      /* Adiciona 20 pixels de espacamento interno em todos os lados */
 }
 
 .itens {
-    font-style: italic;                 /* Deixa o texto desta classe em estilo itálico (inclinado) */
+    font-style: italic;                 /* Deixa o texto desta classe em estilo italico (inclinado) */
 }
 
 footer {
-    text-align: center;                 /* Centraliza todos os textos e elementos dentro do rodapé */
-    background: url("bg.jpg");          /* Define uma imagem chamada "bg.jpg" como fundo do rodapé */
-    padding: 40px 0;                    /* Adiciona 40 pixels de espaçamento interno acima e abaixo no rodapé */
+    text-align: center;                 /* Centraliza todos os textos e elementos dentro do rodape */
+    background: url("bg.jpg");          /* Define uma imagem chamada "bg.jpg" como fundo do rodape */
+    padding: 40px 0;                    /* Adiciona 40 pixels de espacamento interno acima e abaixo no rodape */
 }
 
 .copyright {
@@ -88,5 +88,18 @@ footer {
 }
 
 .imagembeneficios {
-    width: 60%;                         /* Faz a imagem de benefícios ocupar 60% da largura do espaço disponível */
+    width: 60%;                         /* Faz a imagem de beneficios ocupar 60% da largura do espaco disponivel */
+}
+.mapa {
+    padding: 3em 0;          /* Espaco interno: 3em em cima/baixo, zero nas laterais */
+}
+
+.mapa p {
+    margin: 0 0 2em;         /* Margem externa: zero acima/lados e 2em de espaco abaixo */
+    text-align: center;      /* Alinha o texto do paragrafo perfeitamente no centro */
+}
+
+.video {
+    width: 560px;            /* Define a largura fixa da area do video em 560 pixels */
+    margin: 1em auto;        /* Margem: 1em em cima/baixo e 'auto' centraliza nas laterais */
 }
