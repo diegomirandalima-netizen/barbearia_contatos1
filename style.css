@@ -13,7 +13,7 @@ body {
     clear: left;                        /* Impede que o titulo fique ao lado de elementos flutuados a esquerda */
 }
 
-.nvfoto.jpg {
+.nvfoto {
     width: 120px;                       /* Define a largura fixa da imagem/elemento em 120 pixels */
     float: left;                        /* Faz o elemento flutuar a esquerda, permitindo que textos contornem ele */
     margin: 0 20px 20px 0;              /* Adiciona espacamento externo na direita e abaixo do elemento */
@@ -26,7 +26,7 @@ header {
 
 .caixa {
     position: relative;                 /* Define este elemento como a referencia de posicionamento para seus filhos */
-    width: 940px;                       /* Define uma largura fixa maxima de 940 pixels para o conteudo */
+    width: 940px;                       /* Define uma largura fixa maxima de 940 pixels para o conteúdo */
     margin: 0 auto;                     /* Centraliza este bloco horizontalmente na tela */
 }
 
@@ -42,7 +42,7 @@ nav li {
 }
 
 nav a {
-    text-transform: uppercase;          /* Transforma todos os textos dos links em letras maiusculas */
+    text-transform: uppercase;          /* Transforma todos os textos dos links em letras maiúsculas */
     color: #000000;                     /* Define a cor do texto do link como preto */
     font-weight: bold;                  /* Deixa a fonte em negrito */
     font-size: 22px;                    /* Define o tamanho da fonte do link para 22 pixels */
