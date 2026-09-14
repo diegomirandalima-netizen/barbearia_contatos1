@@ -1,5 +1,6 @@
 body {
     background: #CCCCCC;                /* Define a cor de fundo da pagina como cinza claro */
+    font-family: sans-serif;            /* Define uma fonte padrao legivel para o site */
 }
 
 #banner {
@@ -13,8 +14,9 @@ body {
     clear: left;                        /* Impede que o titulo fique ao lado de elementos flutuados a esquerda */
 }
 
-.utensilios {
-    width: 60px;                       /* Define a largura fixa da imagem/elemento em 120 pixels */
+/* Corrigido para refletir a classe da foto da secao principal e aumentada para melhor visualizacao */
+.imagem-sobre {
+    width: 200px;                       /* Define uma largura ideal para a imagem */
     float: left;                        /* Faz o elemento flutuar a esquerda, permitindo que textos contornem ele */
     margin: 0 20px 20px 0;              /* Adiciona espacamento externo na direita e abaixo do elemento */
 }
@@ -54,11 +56,12 @@ nav a:hover {
     text-decoration: underline;         /* Adiciona um sublinhado no link quando o mouse passa por cima */
 }
 
+/* Ajustado os tamanhos para que a lista e a imagem caibam juntas na horizontal */
 .lista-beneficios {
     display: inline-block;              /* Permite definir tamanho ao bloco, mas mantendo-o lado a lado com outros */
     vertical-align: top;                /* Alinha este bloco pelo topo em relacao aos elementos vizinhos */
-    width: 20%;                         /* Define que a lista ocupara 20% da largura total da tela */
-    margin-right: 15%;                  /* Cria um espaco de reserva de 15% na lateral direita do bloco */
+    width: 40%;                         /* Define que a lista ocupara 40% do espaco */
+    margin-right: 5%;                   /* Cria um espaco de reserva na lateral direita do bloco */
 }
 
 .principal {
@@ -68,11 +71,36 @@ nav a:hover {
 
 .beneficios {
     background: #FFFFFF;                /* Define o fundo da secao de beneficios como branco */
-    padding: 20px;                      /* Adiciona 20 pixels de espacamento interno em todos os lados */
+    padding: 30px 20px;                 /* Adiciona espacamento interno nos lados e acima/abaixo */
 }
 
 .itens {
     font-style: italic;                 /* Deixa o texto desta classe em estilo italico (inclinado) */
+    margin-bottom: 10px;                /* Cria um pequeno espaco entre as linhas da lista */
+}
+
+/* Corrigido o nome da classe para bater com o HTML */
+.imagem-beneficios {
+    width: 50%;                         /* Faz a imagem de beneficios ocupar metade da largura disponivel */
+}
+
+.mapa {
+    padding: 3em 0;                     /* Espaco interno: 3em em cima/baixo, zero nas laterais */
+}
+
+.mapa p {
+    margin: 0 0 2em;                    /* Margem externa: zero acima/lados e 2em de espaco abaixo */
+    text-align: center;                 /* Alinha o texto do paragrafo perfeitamente no centro */
+}
+
+.mapa iframe {
+    display: block;                     /* Transforma o iframe em bloco para permitir a centralizacao */
+    margin: 0 auto;                     /* Centraliza o mapa na tela horizontalmente */
+}
+
+.video {
+    width: 560px;                       /* Define a largura fixa da area do video em 560 pixels */
+    margin: 2em auto;                   /* Margem: 2em em cima/baixo e 'auto' centraliza nas laterais */
 }
 
 footer {
@@ -85,21 +113,4 @@ footer {
     color: #FFFFFF;                     /* Define a cor do texto de direitos autorais como branco */
     font-size: 13px;                    /* Define o tamanho da fonte para 13 pixels */
     margin: 20px 0 0;                   /* Adiciona 20 pixels de margem externa apenas na parte superior */
-}
-
-.imagembeneficios {
-    width: 60%;                         /* Faz a imagem de beneficios ocupar 60% da largura do espaco disponivel */
-}
-.mapa {
-    padding: 3em 0;          /* Espaco interno: 3em em cima/baixo, zero nas laterais */
-}
-
-.mapa p {
-    margin: 0 0 2em;         /* Margem externa: zero acima/lados e 2em de espaco abaixo */
-    text-align: center;      /* Alinha o texto do paragrafo perfeitamente no centro */
-}
-
-.video {
-    width: 560px;            /* Define a largura fixa da area do video em 560 pixels */
-    margin: 1em auto;        /* Margem: 1em em cima/baixo e 'auto' centraliza nas laterais */
 }
