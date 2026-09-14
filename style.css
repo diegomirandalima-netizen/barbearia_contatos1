@@ -13,7 +13,7 @@ body {
     clear: left;                        /* Impede que o titulo fique ao lado de elementos flutuados a esquerda */
 }
 
-.utensilios {
+.nvfoto.jpg {
     width: 120px;                       /* Define a largura fixa da imagem/elemento em 120 pixels */
     float: left;                        /* Faz o elemento flutuar a esquerda, permitindo que textos contornem ele */
     margin: 0 20px 20px 0;              /* Adiciona espacamento externo na direita e abaixo do elemento */
