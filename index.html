@@ -3,106 +3,95 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel = "stylesheet" href = "style.css">  
+    <link rel="stylesheet" href="style.css">  
     <title>Barbearia Alura</title>
 </head>
 <body>
     <!-- Define o cabeçalho principal localizado no topo do site -->
     <header>
-            <!-- Divisão interna usada no CSS para limitar e centralizar a largura do conteúdo do cabeçalho -->
-            <div class="caixa">
-                <!-- Título principal do topo do site, que abriga o logotipo oficial da barbearia -->
-                <h1><img src="logo.png"></h1>
-                <!-- Define a seção que contém os links do menu de navegação do site -->
-                <nav>
-                    <!-- Lista não ordenada usada para estruturar os itens do menu -->
-                    <ul>
-                        <!-- Item da lista com o link direcionado para a própria página inicial (Home) -->
-                        <li><a href="index.html">Home</a></li>
+        <!-- Divisão interna usada no CSS para limitar e centralizar a largura do conteúdo do cabeçalho -->
+        <div class="caixa">
+            <!-- Título principal do topo do site, que abriga o logotipo oficial da barbearia -->
+            <h1><img src="logo.png" alt="Logo da Barbearia Alura"></h1>
+            <!-- Define a seção que contém os links do menu de navegação do site -->
+            <nav>
+                <!-- Lista não ordenada usada para estruturar os itens do menu -->
+                <ul>
+                    <!-- Item da lista com o link direcionado para a própria página inicial (Home) -->
+                    <li><a href="index.html">Home</a></li>
+                    <!-- Item da lista com o link que leva para a página de serviços (Produtos) -->
+                    <li><a href="produtos.html">Produtos</a></li>
+                    <!-- Item da lista com o link que direciona para a página do formulário (Contato) -->
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-                        <!-- Item da lista com o link que leva para a página de serviços (Produtos) -->
-                        <li><a href="produtos.html">Produtos</a></li>
+    <!-- Imagem de destaque do tipo banner com ID específico para o CSS -->
+    <img id="banner" src="banner.jpg" alt="Foto de uma barbearia com poltronas e espelho">
 
-                        <!-- Item da lista com o link que direciona para a página do formulário (Contato) -->
-                        <li><a href="contato.html">Contato</a></li>
-
-                    </ul>
-                </nav>
-            </div>
-        </header>
-    <!-- Imagem de destaque do tipo banner com ID específico para o CSS e texto alternativo de acessibilidade -->
-    <img id="banner" src = "banner.jpg" alt="foto de uma barbearia com poltronas e espelho">
-
-   <!-- Define a área central de conteúdo informativo e exclusivo desta página inicial -->
-   <main>
-    <!-- Seção temática voltada para apresentar a história e a descrição conceitual do estabelecimento -->
-    <section class = "principal">
-<main>
-        <!-- Título secundário identificando o bloco sobre a história da empresa -->
-        <h2 class = "titulo-principal">Sobre a Barbearia Alura</h2>
-
-        <!-- Imagem ilustrativa com uma classe de estilo (nota: o nome da classe ficou idêntico ao nome do arquivo) -->
-        <img class="nvfoto.jpg" src="nvfoto.jpg" alt="Utensilios de um barbeiro.">
-
-        <!-- Parágrafo contendo texto explicativo, usando a tag strong para destacar o nome da barbearia em negrito -->
-        <p>Localizada no coração da cidade a <strong>Barbearia Alura</strong> traz para o 
-    mercado o que há de melhor para o seu cabelo e barba. 
-    Fundada em 2019, a Barbearia Alura já é destaque na cidade e 
-    conquista novos clientes a cada dia. </p>
-
-        <!-- Parágrafo de missão institucional, combinando negrito (strong) e itálico (em) para criar forte destaque visual -->
-        <p>Nossa missão é: <strong><em>"Proporcionar auto-estima e qualidade de vida
-    aos clientes".</em></strong></p>
-
-        <!-- Parágrafo descritivo que detalha o padrão de qualidade técnica e atendimento dos profissionais -->
-        <p>Oferecemos professionals experientes e antenados às mudanças 
-    no mundo da moda. O atendimento possui padrão de excelência e
-    agilidade, garantindo qualidade e satisfação dos nossos 
-    clientes.</p>
+    <!-- Define a área central de conteúdo informativo e exclusivo desta página inicial -->
     <main>
-     </section>
-    <selection class="mapa">
-        <h3 class="titulo-principal">nosso estalecimento</h3>
-        <p>nosso estabelecimento esta localizado no coração da cidade.</p>
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.449840638976!2d-46.63490682560806!3d-23.588194778781364!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59541c6c79c3%3A0x36b90a85f0f8cb33!2sAlura!5e0!3m2!1spt-BR!2sbr!4v1789425234300!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
-    </selection>
+        <!-- Seção temática voltada para apresentar a história e a descrição conceitual do estabelecimento -->
+        <section class="principal">
+            <!-- Título secundário identificando o bloco sobre a história da empresa -->
+            <h2 class="titulo-principal">Sobre a Barbearia Alura</h2>
 
-    <!-- Seção temática dedicada a listar as vantagens competitivas que a barbearia oferece -->
-    <section class = "beneficios">
+            <!-- Imagem ilustrativa com uma classe de estilo para manipulação no CSS -->
+            <img class="imagem-sobre" src="nvfoto.jpg" alt="Utensílios de um barbeiro.">
 
-        <!-- Título de nível 3 para identificar a lista de diferenciais da barbearia -->
-        <h3 class = "titulo-principal">Benefícios</h3>
+            <!-- Parágrafo contendo texto explicativo -->
+            <p>Localizada no coração da cidade a <strong>Barbearia Alura</strong> traz para o 
+            mercado o que há de melhor para o seu cabelo e barba. 
+            Fundada em 2019, a Barbearia Alura já é destaque na cidade e 
+            conquista novos clientes a cada dia. </p>
 
-        <!-- Lista não ordenada que agrupa os itens de vantagens estilizados pelo CSS -->
-        <ul class = "lista-beneficios">
+            <!-- Parágrafo de missão institucional -->
+            <p>Nossa missão é: <strong><em>"Proporcionar auto-estima e qualidade de vida aos clientes".</em></strong></p>
 
-            <!-- Item individual da lista de benefícios usando a classe de estilo "itens" -->
-            <li class = "itens">Atendimento aos clientes</li>
+            <!-- Parágrafo descritivo que detalha o padrão de qualidade técnica e atendimento -->
+            <p>Oferecemos profissionais experientes e antenados às mudanças 
+            no mundo da moda. O atendimento possui padrão de excelência e
+            agilidade, garantindo qualidade e satisfação dos nossos clientes.</p>
+        </section>
 
-            <!-- Segundo item individual apontando o diferencial do ambiente físico -->
-            <li class = "itens">Espaço diferenciado</li>
+        <!-- Seção do Mapa -->
+        <section class="mapa">
+            <h3 class="titulo-principal">Nosso estabelecimento</h3>
+            <p>Nosso estabelecimento está localizado no coração da cidade.</p>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.449840638976!2d-46.63490682560806!3d-23.588194778781364!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59541c6c79c3%3A0x36b90a85f0f8cb33!2sAlura!5e0!3m2!1spt-BR!2sbr!4v1789425234300!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+        </section>
 
-            <!-- Terceiro item individual destacando o ponto geográfico estratégico -->
-            <li class = "itens">Localização</li>
+        <!-- Seção temática dedicada a listar as vantagens competitivas -->
+        <section class="beneficios">
+            <!-- Título de nível 3 para identificar a lista de diferenciais -->
+            <h3 class="titulo-principal">Benefícios</h3>
 
-            <!-- Quarto item individual reforçando a capacidade técnica da equipe de barbeiros -->
-            <li class = "itens">Profissionais qualificados</li>
-        </ul>
-    <!-- Imagem lateral ilustrativa posicionada ao lado da lista de benefícios através do CSS -->
-    <img class = "beneficios.jpg" src = "beneficios.jpg" alt = "homem sentado em uma poltrona fazendo a barba">
-</section>
-</main>
-<div class="video">
-    <iframe width="560" height="315"src="https://www.youtube.com/embed/wcVVXUV0YUY"></iframe>
-</DIV>
-    <!-- Define a seção de encerramento do site, posicionada na parte inferior de todas as páginas -->
+            <!-- Lista não ordenada que agrupa os itens de vantagens -->
+            <ul class="lista-beneficios">
+                <li class="itens">Atendimento aos clientes</li>
+                <li class="itens">Espaço diferenciado</li>
+                <li class="itens">Localização</li>
+                <li class="itens">Profissionais qualificados</li>
+            </ul>
+
+            <!-- Imagem lateral ilustrativa posicionada ao lado dos benefícios -->
+            <img class="imagem-beneficios" src="beneficios.jpg" alt="Homem sentado em uma poltrona fazendo a barba">
+        </section>
+
+        <!-- Seção do Vídeo institucional -->
+        <div class="video">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/wcVVXUV0YUY"></iframe>
+        </div>
+    </main>
+
+    <!-- Define a seção de encerramento do site -->
     <footer>
-        
-		<!-- Imagem do logotipo do rodapé adaptada para fundos escuros -->
-		<img src="logo-branco.png">
-        
-		<!-- Texto legal de propriedade, usando o código especial "&copy;" para renderizar o símbolo de copyright © -->
-		<p class="copyright">&copy; Copyright Barbearia Alura - 2019</p>
-	</footer>
+        <!-- Imagem do logotipo do rodapé adaptada para fundos escuros -->
+        <img src="logo-branco.png" alt="Logo branca Barbearia Alura">
+        <!-- Texto legal de propriedade -->
+        <p class="copyright">&copy; Copyright Barbearia Alura - 2019</p>
+    </footer>
 </body>
 </html>
